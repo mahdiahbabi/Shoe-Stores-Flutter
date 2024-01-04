@@ -1,4 +1,3 @@
-
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +15,7 @@ class ImageLoadingService extends StatelessWidget {
       fit: BoxFit.cover,
     );
     if (borderRadius != null) {
-      return ClipRRect(borderRadius: borderRadius, child: image);
+      return ClipRRect(borderRadius: borderRadius!, child: image);
     } else {
       return image;
     }
